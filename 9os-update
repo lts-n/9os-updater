@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+from os import system
+print("Updating deb packages...")
+system("sudo apt update && sudo apt upgrade -y")
+print("Updating 9OS for PC System Package...")
+system("mkdir -p /tmp/9os && wget -qO /tmp/9os/9os-for-pc-syspkg.deb http://lts-n.github.io/osd-repo/9os-for-pc-syspkg.deb && sudo apt install /tmp/9os/9os-for-pc-syspkg.deb")
