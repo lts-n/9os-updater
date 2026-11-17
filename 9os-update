@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#version: rollercoaster1
 from os import system
 print("Updating deb packages...")
 system("sudo apt update && sudo apt upgrade -y")
